@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="chart-wrapper">
+    <ngx-charts-line-chart
+      [view]="view"
+      [scheme]="colorScheme"
+      [results]="emotionData"
+      [xAxis]="true"
+      [yAxis]="true"
+      [legend]="true"
+      [showXAxisLabel]="true"
+      [showYAxisLabel]="true"
+      [xAxisLabel]="'Time (seconds)'"
+      [yAxisLabel]="'Emotion Intensity (%)'"
+      [autoScale]="true"
+      [animations]="true"
+    >
+    </ngx-charts-line-chart>
+  </div>
+
+  <!-- Thumbnail Container Alignment  -->
+  <div class="thumbnail-container">
+    <div
+      class="thumbnail"
+      *ngFor="let thumb of thumbnails"
+      (click)="onThumbnailClick(thumb.timestamp)"
+    >
+      <img [src]="thumb.thumbnailUrl" alt="Thumbnail" />
+      <span>{{ thumb.timestamp }}</span>
+    </div>
+  </div>
+</div>
