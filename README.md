@@ -26,7 +26,7 @@ Before running the project, install dependencies:
 - Thumbnails and scrubbing functionality.
 - Smooth animations and summary statistics.
 - Responsive design.
-- Unit tests for core functionalities.
+- Unit tests for core functionalities to verify that the main features of the application are working correctly.
 
 ## Usage Example
 
@@ -75,6 +75,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The unit tests cover core functionalities to ensure that the primary features, such as chart rendering, data binding, and user interactions, are working correctly.
 
 ## Running end-to-end tests
 
